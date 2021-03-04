@@ -1,0 +1,287 @@
+
+// Chromatic Colors  ----------------------- //
+$comment-mockup-color:  hsla(220, 2%, 51%, 0.2);
+
+$text-white: hsla(220, 20%, 90%, 0.7);
+
+// background 
+$gray-transparent: rgba(73, 73, 73, 0.9);
+$hardShadow: rgba(0, 0, 0, 0.4);
+
+
+// Saturated Colors  ----------------------- //
+
+
+// Shadows  ----------------------- //
+
+
+// Layout   ----------------------- //
+
+
+
+// Fonts, Text   ----------------------- //
+
+$font-weight-medium: 700;
+$font-weight-brand: $font-weight-medium;
+
+// ========================
+
+
+
+
+
+
+/* =========================
+    W E B   F O N T S
+============================ */ 
+
+
+/* =============================
+  BASE ELEMENT STYLES
+================================ */
+
+/* tags --------------------- */
+
+p {
+  hyphens: auto;
+}
+
+footer {
+  // color: $text-white !important;
+  min-height: 10rem;
+  // width: 100%;
+  // text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* classes --------------------- */
+.card {
+  img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1;    
+  }
+}
+
+
+
+
+.icon-facebook {
+  background-color: red;
+  -webkit-mask: url('../icons/facebook.svg') no-repeat center;
+  mask: url('../icons/facebook.svg') no-repeat center;
+}
+
+
+
+/* IDs     --------------------- */
+
+
+#carousel {
+  // img {
+  //   object-fit: cover;
+  //   // max-width: 80vh;
+  //   min-height: 200vh !important;
+  //   aspect-ratio: 1;    
+  // }
+
+  // img {}
+
+  
+  .display-1 {
+    font-size: 4rem;
+    // font-weight: normal;
+  }
+
+  
+  .carousel-item {
+    // color: black !important;
+    min-height: 65vh !important;
+    // background-color: rgba(255, 187, 0, 0.3);
+    background-color: rgba(125, 127, 150, 1);
+    mix-blend-mode: soft-light;
+  } 
+  
+  @media (min-width: 1000px) {
+
+    .carousel-item {
+      // color: black !important;
+      min-height: 100vh !important;
+      // background-color: rgba(255, 187, 0, 0.3);
+      background-color: rgba(125, 127, 150, 1);
+      mix-blend-mode: soft-light;
+    } 
+    
+    .display-1 {
+      font-size: 6rem;
+      font-weight: normal;
+      // font-weight: bold;
+    }
+    
+
+  }
+
+  .carousel-item {
+    transition: transform 2s ease, opacity 1s ease-out;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-blend-mode: soft-light;
+  }
+  
+  
+  // Linki do obrazów /**/ 
+  #carousel-item-1 {
+    background-image: url('https://media.istockphoto.com/photos/electrician-mounting-solar-panel-on-roof-of-modern-house-picture-id1127159370?s=2048x2048');
+  }
+  #carousel-item-2 {
+    background-image: url('https://media.istockphoto.com/photos/plumbers-tools-and-plumbing-materials-banner-with-copy-space-picture-id625280930');    
+  }
+  #carousel-item-3 {
+    background-image: url('https://media.istockphoto.com/photos/boiler-gas-heater-water-picture-id946869444?s=2048x2048');    
+  }
+  #carousel-item-4 {
+    background-image: url('https://media.istockphoto.com/photos/boiler-gas-heater-water-picture-id946869444?s=2048x2048');    
+  }
+
+
+  // 
+  // 
+  // 
+  // 
+}
+
+
+#hero-jumbotron {
+  min-height: 100vh;
+  background: url('https://media.istockphoto.com/photos/plumbers-tools-and-plumbing-materials-banner-with-copy-space-picture-id625280930') center/cover no-repeat scroll rgba(0, 0, 0, 0.85);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-attachment: scroll;
+  background-blend-mode: color-burn;
+  
+  
+  text-shadow: .1rem .1rem .5rem rgba(0, 0, 0, 0.8);
+}
+
+.comment-mockup {
+  color: $comment-mockup-color;
+  font-style: italic;
+  margin: 0;
+  padding: .2rem;
+}
+
+/* =============================
+  ANIMATIONS AND EFFECTS
+================================ */
+
+.hover-light {
+  padding: 0;
+  
+  &:hover {
+    display: inline-block;
+    // background-image:  radial-gradient(rgba(255, 255, 0, 0.5), rgba(0, 255, 0, 1));
+    background-image:  radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+  }
+
+  img:hover {
+    animation-name: lights-on;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  >img {
+    animation: none;
+  }
+}
+@keyframes lights-on {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+// .hover-light img:hover { 
+//   mix-blend-mode: multiply;
+// }
+
+
+/* =============================
+  BASE LAYOUT STYLES
+================================ */
+
+
+
+/* =============================
+  MEDIA QUERIES
+================================ */
+
+
+
+/* ==========================================================
+
+
+/* =============================
+  WPISZ TU
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap');
+$font-family-serif:   'EB Garamond', Georgia, 'Times New Roman', Times, serif;
+
+
+
+nav {
+  // background: $gray-transparent;
+  box-shadow: .1rem .1rem .2rem .1rem $hardShadow;
+}
+
+/* classes ----------------*/
+
+.text-white {
+  color: $text-white !important;
+}
+
+.navbar-brand {
+  text-transform: uppercase !important;
+  font-weight: $font-weight-brand;
+}
+
+// https://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/
+footer {
+  a {
+    // position: relative;
+    .svg-file {
+      // position: absolute;
+      // top: 0; left: -70px;
+      filter: invert(100%) saturate(100%) hue-rotate(28deg);
+    }  
+  }  
+}
+
+
+#facebook-svg {
+  filter: url("../icons/facebook.svg");
+  color: red;
+}
+
+
+/* ========================
+  MEDIA QUERIES
+ ========================*/
+
+ @media (max-width:500px) {
+  // nav {
+  //   // font-size: 10px;
+  // }
+
+ }
+
+
+

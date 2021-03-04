@@ -1,0 +1,195 @@
+/* =========================
+    W E B   F O N T S
+============================ */
+/* =============================
+  BASE ELEMENT STYLES
+================================ */
+/* tags --------------------- */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap");
+p {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+footer {
+  min-height: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* classes --------------------- */
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.icon-facebook {
+  background-color: red;
+  -webkit-mask: url("../icons/facebook.svg") no-repeat center;
+  mask: url("../icons/facebook.svg") no-repeat center;
+}
+
+/* IDs     --------------------- */
+#carousel .display-1 {
+  font-size: 4rem;
+}
+
+#carousel .carousel-item {
+  min-height: 65vh !important;
+  background-color: #7d7f96;
+  mix-blend-mode: soft-light;
+}
+
+@media (min-width: 1000px) {
+  #carousel .carousel-item {
+    min-height: 100vh !important;
+    background-color: #7d7f96;
+    mix-blend-mode: soft-light;
+  }
+  #carousel .display-1 {
+    font-size: 6rem;
+    font-weight: normal;
+  }
+}
+
+#carousel .carousel-item {
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 2s ease;
+  transition: opacity 1s ease-out, -webkit-transform 2s ease;
+  transition: transform 2s ease, opacity 1s ease-out;
+  transition: transform 2s ease, opacity 1s ease-out, -webkit-transform 2s ease;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-blend-mode: soft-light;
+}
+
+#carousel #carousel-item-1 {
+  background-image: url("https://media.istockphoto.com/photos/electrician-mounting-solar-panel-on-roof-of-modern-house-picture-id1127159370?s=2048x2048");
+}
+
+#carousel #carousel-item-2 {
+  background-image: url("https://media.istockphoto.com/photos/plumbers-tools-and-plumbing-materials-banner-with-copy-space-picture-id625280930");
+}
+
+#carousel #carousel-item-3 {
+  background-image: url("https://media.istockphoto.com/photos/boiler-gas-heater-water-picture-id946869444?s=2048x2048");
+}
+
+#carousel #carousel-item-4 {
+  background-image: url("https://media.istockphoto.com/photos/boiler-gas-heater-water-picture-id946869444?s=2048x2048");
+}
+
+#hero-jumbotron {
+  min-height: 100vh;
+  background: url("https://media.istockphoto.com/photos/plumbers-tools-and-plumbing-materials-banner-with-copy-space-picture-id625280930") center/cover no-repeat scroll rgba(0, 0, 0, 0.85);
+  background-blend-mode: color-burn;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+}
+
+.comment-mockup {
+  color: rgba(128, 129, 133, 0.2);
+  font-style: italic;
+  margin: 0;
+  padding: .2rem;
+}
+
+/* =============================
+  ANIMATIONS AND EFFECTS
+================================ */
+.hover-light {
+  padding: 0;
+}
+
+.hover-light:hover {
+  display: inline-block;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2), white);
+}
+
+.hover-light img:hover {
+  -webkit-animation-name: lights-on;
+          animation-name: lights-on;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.hover-light > img {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes lights-on {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes lights-on {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+/* =============================
+  BASE LAYOUT STYLES
+================================ */
+/* =============================
+  MEDIA QUERIES
+================================ */
+/* ==========================================================
+
+
+/* =============================
+  WPISZ TU
+================================ */
+nav {
+  -webkit-box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+}
+
+/* classes ----------------*/
+.text-white {
+  color: rgba(224, 228, 235, 0.7) !important;
+}
+
+.navbar-brand {
+  text-transform: uppercase !important;
+  font-weight: 700;
+}
+
+footer a .svg-file {
+  -webkit-filter: invert(100%) saturate(100%) hue-rotate(28deg);
+          filter: invert(100%) saturate(100%) hue-rotate(28deg);
+}
+
+#facebook-svg {
+  -webkit-filter: url("../icons/facebook.svg");
+          filter: url("../icons/facebook.svg");
+  color: red;
+}
+
+/* ========================
+  MEDIA QUERIES
+ ========================*/
+/*# sourceMappingURL=style.css.map */
