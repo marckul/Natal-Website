@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 /* =========================
     W E B   F O N T S
 ============================ */
@@ -6,6 +8,7 @@
 ================================ */
 /* tags --------------------- */
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap");
+@import url(c:\Users\Marcin\Documents\MARCIN\WebDev\Projekty\Natal-Instalacje\Mockups\NatalWebsite\aktualnosci\css\bootstrap.css);
 p {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -27,7 +30,7 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 1 !important;
 }
 
 .icon-facebook {
@@ -36,30 +39,47 @@ footer {
   mask: url("../icons/facebook.svg") no-repeat center;
 }
 
+.gallery .img-4-3 {
+  width: 100%;
+  padding-top: 75%;
+  position: relative;
+}
+
+.gallery img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  aspect-ratio: 1 !important;
+  width: 100%;
+}
+
 /* IDs     --------------------- */
-#carousel .display-1 {
+#carousel-hero .display-1 {
   font-size: 4rem;
 }
 
-#carousel .carousel-item {
+#carousel-hero .carousel-item {
   min-height: 65vh !important;
   background-color: #7d7f96;
   mix-blend-mode: soft-light;
 }
 
 @media (min-width: 1000px) {
-  #carousel .carousel-item {
+  #carousel-hero .carousel-item {
     min-height: 100vh !important;
     background-color: #7d7f96;
     mix-blend-mode: soft-light;
   }
-  #carousel .display-1 {
+  #carousel-hero .display-1 {
     font-size: 6rem;
     font-weight: normal;
   }
 }
 
-#carousel .carousel-item {
+#carousel-hero .carousel-item {
   -webkit-transition: opacity 1s ease-out, -webkit-transform 2s ease;
   transition: opacity 1s ease-out, -webkit-transform 2s ease;
   transition: transform 2s ease, opacity 1s ease-out;
@@ -71,19 +91,19 @@ footer {
   background-blend-mode: soft-light;
 }
 
-#carousel #carousel-item-1 {
+#carousel-hero #carousel-item-1 {
   background-image: url("https://media.istockphoto.com/photos/electrician-mounting-solar-panel-on-roof-of-modern-house-picture-id1127159370?s=2048x2048");
 }
 
-#carousel #carousel-item-2 {
+#carousel-hero #carousel-item-2 {
   background-image: url("https://media.istockphoto.com/photos/plumbers-tools-and-plumbing-materials-banner-with-copy-space-picture-id625280930");
 }
 
-#carousel #carousel-item-3 {
+#carousel-hero #carousel-item-3 {
   background-image: url("https://media.istockphoto.com/photos/boiler-gas-heater-water-picture-id946869444?s=2048x2048");
 }
 
-#carousel #carousel-item-4 {
+#carousel-hero #carousel-item-4 {
   background-image: url("https://media.istockphoto.com/photos/boiler-gas-heater-water-picture-id946869444?s=2048x2048");
 }
 
@@ -163,19 +183,98 @@ footer {
 /* =============================
   WPISZ TU
 ================================ */
-nav {
+.navbar {
   -webkit-box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
           box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+  min-height: 5rem;
+  text-transform: uppercase !important;
+}
+
+.navbar .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+  /*    */
+}
+
+.navbar .navbar-brand span1 {
+  display: block;
+}
+
+.navbar .navbar-brand span1:first-child {
+  font-size: 2rem;
+  text-transform: uppercase !important;
+  font-weight: bold;
+}
+
+.navbar .navbar-brand span1:last-child {
+  text-transform: uppercase !important;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.navbar .navbar-brand span {
+  display: block;
+}
+
+.navbar .navbar-brand span:first-child {
+  font-size: 1.6rem;
+  text-transform: uppercase !important;
+  font-weight: 700;
+}
+
+.navbar .navbar-brand span:last-child {
+  text-transform: uppercase !important;
+  font-weight: 300;
+  /* OPCJA 1 GAJA PREFERUJE TA*/
+  font-size: 1.0rem;
+  /* OPCJA 3*/
+}
+
+.navbar .navbar-brand span3 {
+  display: block;
+}
+
+.navbar .navbar-brand span3:first-child {
+  font-size: 2rem;
+  text-transform: uppercase !important;
+  font-weight: normal;
+}
+
+.navbar .navbar-brand span3:last-child {
+  text-transform: capitalize !important;
+  font-weight: 300;
+  font-size: smaller;
+}
+
+.navbar .navbar-brand span3 span2 {
+  display: block;
+  font-style: oblique;
+}
+
+.navbar .navbar-brand span3 span2:first-child {
+  font-size: 2rem;
+  text-transform: uppercase !important;
+  font-weight: normal;
+}
+
+.navbar .navbar-brand span3 span2:last-child {
+  text-transform: uppercase !important;
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 /* classes ----------------*/
 .text-white {
   color: rgba(224, 228, 235, 0.7) !important;
-}
-
-.navbar-brand {
-  text-transform: uppercase !important;
-  font-weight: 700;
 }
 
 footer a .svg-file {
@@ -192,4 +291,112 @@ footer a .svg-file {
 /* ========================
   MEDIA QUERIES
  ========================*/
+@use "sass:map";
+.shadow-sm {
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-hard-sm {
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5) !important;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-none {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.display-6 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+p {
+  text-align: justify;
+}
+
+.img-fit {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.img-aspect1 {
+  padding-top: 100%;
+  position: relative;
+}
+
+.img-aspect1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-aspect43 {
+  padding-top: 75%;
+  position: relative;
+}
+
+.img-aspect43 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-aspect32 {
+  padding-top: 66.6%;
+  position: relative;
+}
+
+.img-aspect32 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.my-sidebar .content-break {
+  min-height: 4rem;
+}
+
+.my-sidebar .TOC {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+@media (max-width: 1200px) {
+  .my-sidebar .TOC {
+    margin-left: .2rem;
+    margin-right: auto;
+  }
+}
+
+.my-sidebar ul li, .my-sidebar ul a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.single-post {
+  min-height: 60vh;
+}
 /*# sourceMappingURL=style.css.map */

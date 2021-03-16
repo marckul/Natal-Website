@@ -1,0 +1,157 @@
+@use "sass:map";
+@import 'bootstrap.css';
+
+$shadow-sm: 0 0.125rem 0.25rem;
+$shadow-md: 0 0.125rem 0.5rem;
+$shadow: 0 0.5rem 1rem;
+$opacity-medium: .35;
+$opacity-hard: .5;
+
+
+$screen-size: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+// =================
+
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.shadow-hard-sm {
+  box-shadow: $shadow-sm rgba(0, 0, 0, $opacity-hard) !important;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+
+
+
+
+.display-6 {
+  font-size: map-get($display-font-sizes, 6);
+  font-weight: 300;
+  line-height: 1.2;
+  hyphens: auto;
+  @media (min-width: map-get($screen-size, md)) {
+  }
+
+}
+
+
+
+
+
+p {
+  text-align: justify;
+}
+
+.img-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+
+.img-aspect1 {
+  padding-top: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.img-aspect43 {
+  padding-top: 75%;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+.img-aspect32 {
+  padding-top: 66.6%;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+.my-sidebar {
+
+  .content-break {
+    min-height: 4rem;
+  }
+
+  .TOC {
+    position: sticky;
+    top: 5rem;
+    width: min-content;
+
+    @media (max-width: map-get($screen-size, xl)) {
+      margin-left: .2rem;
+      margin-right: auto;
+    // margin-right: .2rem;
+
+    // padding: 1rem;
+      
+    }
+
+    
+  }
+
+  ul {
+    li, a{ 
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+}
+
+
+// single.html
+.single-post {
+  min-height: 60vh;
+}
+
+
+// <p>Pariatur impedit vero quia nobis culpa est quas consequuntur quae incidunt quaerat maiores harum a voluptate architecto beatae, nemo in repellat porro, fugiat cumque eum expedita cum tempore qui? Ut, autem, ipsa distinctio, commodi unde quis mollitia excepturi vel quia aliquid fugiat. Eum qui vitae sapiente neque ducimus fugiat voluptatum similique rem, nesciunt, modi, facere delectus sed! Voluptates dignissimos quidem dolorum ullam nobis quam voluptas aperiam quo blanditiis explicabo eaque ducimus, provident est eos ad corporis amet excepturi odit laudantium velit? Ullam, porro atque. Itaque voluptates necessitatibus quaerat pariatur. Earum necessitatibus quidem tempore rerum accusantium dolor, blanditiis facilis at culpa labore, reprehenderit minima, enim voluptatum aperiam officiis. Fugiat ex libero nesciunt eveniet consectetur quia nostrum incidunt architecto quae. Obcaecati sit asperiores, hic vitae voluptas officia exercitationem autem commodi quam. Voluptatem, nulla ut quidem fuga ipsam, delectus error magni sint recusandae, ex placeat ducimus harum sequi esse. Odit cum vero repellat iusto quae numquam consectetur magnam, facere aspernatur molestias perspiciatis aliquid sequi voluptatum nisi ut distinctio saepe temporibus iste recusandae velit quidem hic mollitia dolore? Repellendus cupiditate ipsum, itaque harum delectus mollitia ipsam libero aspernatur molestiae repellat a dignissimos non laudantium laboriosam voluptatum. Laborum quibusdam voluptatem praesentium quidem placeat itaque ex facilis provident ducimus doloremque, voluptatibus culpa quae, excepturi quam unde eum maxime quaerat voluptates laudantium obcaecati dicta quos, vitae possimus temporibus. Libero eligendi veniam mollitia corporis impedit dignissimos dicta maiores tenetur dolorum esse? Unde sequi modi laborum, fugiat maxime sint?</p>
+
+
+
