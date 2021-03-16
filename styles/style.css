@@ -61,7 +61,7 @@ footer {
 }
 
 #carousel-hero .carousel-item {
-  min-height: 60vh !important;
+  min-height: 100vh !important;
   background-color: #7d7f96;
   mix-blend-mode: soft-light;
 }
