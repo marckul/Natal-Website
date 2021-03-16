@@ -15,7 +15,7 @@ $hardShadow: rgba(0, 0, 0, 0.4);
 // Shadows  ----------------------- //
 
 
-// Layout   ----------------------- //
+
 
 
 
@@ -24,6 +24,31 @@ $hardShadow: rgba(0, 0, 0, 0.4);
 $font-weight-medium: 700;
 $font-weight-normal: 400;
 $font-weight-brand: $font-weight-normal;
+
+
+// Layout   ----------------------- //
+$shadow-sm: 0 0.125rem 0.25rem;
+$shadow-md: 0 0.125rem 0.5rem;
+$shadow: 0 0.5rem 1rem;
+$opacity-medium: .35;
+$opacity-hard: .5;
+
+
+$screen-size: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
 
 
 // VARELA ROUND
@@ -50,8 +75,8 @@ $font-weight-brand: $font-weight-normal;
 
 /* tags --------------------- */
 
-p {
-  hyphens: auto;
+p, h1, h2, h3, h4, h5, h6 {
+  hyphens: auto !important;
 }
 
 footer {
@@ -117,29 +142,28 @@ footer {
   
   .carousel-item {
     // color: black !important;
-    min-height: 65vh !important;
+    min-height: 60vh !important;
     // background-color: rgba(255, 187, 0, 0.3);
     background-color: rgba(125, 127, 150, 1);
     mix-blend-mode: soft-light;
   } 
-  
-  @media (min-width: 1000px) {
 
+  @media (min-width: map-get($screen-size, md)) {
+    
     .carousel-item {
-      // color: black !important;
-      min-height: 100vh !important;
-      // background-color: rgba(255, 187, 0, 0.3);
-      background-color: rgba(125, 127, 150, 1);
-      mix-blend-mode: soft-light;
+      min-height: 100vmin !important;
     } 
     
+  }
+  
+  @media (min-width: map-get($screen-size, lg)) {
+    .carousel-item {
+      min-height: 100vmin !important;
+    } 
     .display-1 {
       font-size: 6rem;
       font-weight: normal;
-      // font-weight: bold;
     }
-    
-
   }
 
   .carousel-item {

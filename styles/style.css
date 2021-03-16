@@ -8,11 +8,10 @@
 ================================ */
 /* tags --------------------- */
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap");
-@import url(c:\Users\Marcin\Documents\MARCIN\WebDev\Projekty\Natal-Instalacje\Mockups\NatalWebsite\aktualnosci\css\bootstrap.css);
-p {
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+p, h1, h2, h3, h4, h5, h6 {
+  -webkit-hyphens: auto !important;
+      -ms-hyphens: auto !important;
+          hyphens: auto !important;
 }
 
 footer {
@@ -62,16 +61,20 @@ footer {
 }
 
 #carousel-hero .carousel-item {
-  min-height: 65vh !important;
+  min-height: 60vh !important;
   background-color: #7d7f96;
   mix-blend-mode: soft-light;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   #carousel-hero .carousel-item {
-    min-height: 100vh !important;
-    background-color: #7d7f96;
-    mix-blend-mode: soft-light;
+    min-height: 100vmin !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #carousel-hero .carousel-item {
+    min-height: 100vmin !important;
   }
   #carousel-hero .display-1 {
     font-size: 6rem;
