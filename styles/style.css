@@ -65,6 +65,26 @@ footer {
   width: 100%;
 }
 
+.map-iframe-mysizes {
+  max-height: 60vmax;
+}
+
+.map-iframe-mysizes::before {
+  padding-top: 100%;
+}
+
+@media (orientation: landscape) {
+  .map-iframe-mysizes {
+    max-height: 95vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .map-iframe-mysizes {
+    max-height: 60vmin;
+  }
+}
+
 /* IDs     --------------------- */
 #carousel-hero .display-1 {
   font-size: 4rem;
@@ -287,7 +307,7 @@ footer {
 
 /* classes ----------------*/
 .text-white {
-  color: rgba(224, 228, 235, 0.7) !important;
+  color: rgba(224, 228, 235, 0.7);
 }
 
 footer a .svg-file {

@@ -137,6 +137,26 @@ footer {
   }
 }
 
+// MAPS
+.map-iframe-mysizes {
+  max-height: 60vmax;
+  &::before {
+    padding-top: 100%;
+  }
+  @media (orientation: landscape) {
+    max-height: 95vh;
+  }
+
+  @media (min-width: map-get($screen-size, lg)){
+    max-height: 60vmin;
+  }
+}
+
+
+
+
+
+
 
 
 /* IDs     --------------------- */
@@ -433,7 +453,7 @@ $font-family-serif:   'EB Garamond', Georgia, 'Times New Roman', Times, serif;
 /* classes ----------------*/
 
 .text-white {
-  color: $text-white !important;
+  color: $text-white;
 }
 
 // https://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/
